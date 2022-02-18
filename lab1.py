@@ -30,6 +30,11 @@ def create_board(size: int) -> Board:
 
 
 def check_rows(board, player):
+    """
+    Check if there is plyers that have full row
+    :return: True = Win
+    :return: False = continue to play 
+    """
     for row in board:
         if row.count(player) == len(row):
             return True
