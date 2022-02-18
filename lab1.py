@@ -42,6 +42,11 @@ def check_rows(board, player):
 
 
 def check_columns(board, player):
+    """
+    Check if there is plyers that have full column
+    :return: True = Win
+    :return: False = continue to play 
+    """
     for i, row in enumerate(board):
         marks = 0
         for j in range(len(row)):
